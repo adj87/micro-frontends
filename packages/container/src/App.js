@@ -1,10 +1,11 @@
 import React from "react";
 import { mount } from "marketing/MarketingApp";
 import MarketingApp from "./components/MarketingApp";
-console.log("mountttt", mount);
+import Header from "./components/Header";
+import { BrowserRouter } from "react-router-dom";
 export default () => (
-  <h1>
-    Hi there!
+  <BrowserRouter>
+    <Header/>
     <MarketingApp />
-  </h1>
+  </BrowserRouter>
 );
